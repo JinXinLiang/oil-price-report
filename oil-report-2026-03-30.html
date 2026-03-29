@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>油价分析报告</title>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; }
@@ -49,7 +49,7 @@
     <div class="container">
         <div class="header">
             <h1>油价分析报告</h1>
-            <div class="subtitle">生成时间: 2026-03-30 03:25</div>
+            <div class="subtitle">生成时间: 2026-03-30 03:27</div>
         </div>
         
         <div class="card">
@@ -160,8 +160,8 @@
             xAxis: { type: 'category', boundaryGap: false, data: ["03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17", "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30"] },
             yAxis: { type: 'value', name: '美元/桶', nameLocation: 'end' },
             series: [
-                { name: '布伦特原油', type: 'line', data: [84.26, 78.28, 82.55, 83.12, 77.5, 84.94, 83.12, 84.22, 76.13, 84.75, 79.9, 77.05, 82.39, 82.95, 80.34, 76.56, 76.7, 84.75, 83.7, 84.23, 77.6, 82.84, 82.29, 83.94, 77.21, 84.27, 78.29, 84.54, 84.24, 83.25], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
-                { name: 'WTI原油', type: 'line', data: [81.26, 75.28, 79.55, 80.12, 74.5, 81.94, 80.12, 81.22, 73.13, 81.75, 76.9, 74.05, 79.39, 79.95, 77.34, 73.56, 73.7, 81.75, 80.7, 81.23, 74.6, 79.84, 79.29, 80.94, 74.21, 81.27, 75.29, 81.54, 81.24, 80.25], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
+                { name: '布伦特原油', type: 'line', data: [76.78, 75.48, 76.4, 78.44, 81.82, 79.61, 79.44, 81.23, 83.4, 82.74, 80.34, 84.27, 76.65, 84.09, 76.21, 75.84, 83.81, 79.77, 78.68, 78.23, 75.82, 77.11, 76.67, 82.02, 80.35, 79.26, 76.94, 79.12, 84.6, 83.33], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
+                { name: 'WTI原油', type: 'line', data: [73.78, 72.48, 73.4, 75.44, 78.82, 76.61, 76.44, 78.23, 80.4, 79.74, 77.34, 81.27, 73.65, 81.09, 73.21, 72.84, 80.81, 76.77, 75.68, 75.23, 72.82, 74.11, 73.67, 79.02, 77.35, 76.26, 73.94, 76.12, 81.6, 80.33], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
             ]
         };
         
