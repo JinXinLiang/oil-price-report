@@ -49,7 +49,7 @@
     <div class="container">
         <div class="header">
             <h1>油价分析报告</h1>
-            <div class="subtitle">生成时间: 2026-03-30 14:21</div>
+            <div class="subtitle">生成时间: 2026-03-30 14:58</div>
         </div>
         
         <div class="card">
@@ -63,18 +63,18 @@
                 <div class="prev">上次: 9100元 | 2026-03-26 10:34</div>
                 <div class="position">近1年高价区 📈</div>
             </div>
-            <div class="price-item low">
+            <div class="price-item ">
                 <div class="label">垦利 0#柴油</div>
-                <div class="value down">7235 元/吨</div>
-                <div class="change">较上次 -20元 | 2026-03-29 08:43</div>
-                <div class="prev">上次: 7255元 | 2026-03-28 10:24</div>
-                <div class="position">处于近1年中低价位</div>
+                <div class="value up">7305 元/吨</div>
+                <div class="change">较上次 +40元 | 2026-03-30 11:09</div>
+                <div class="prev">上次: 7265元 | 2026-03-30 09:48</div>
+                <div class="position">处于近1年中间价位</div>
             </div>
             <div class="price-item high">
                 <div class="label">金诚 95#汽油</div>
-                <div class="value ">7715 元/吨</div>
-                <div class="change">较上次 +0元 | 2026-03-29 08:43</div>
-                <div class="prev">上次: 7715元 | 2026-03-28 09:19</div>
+                <div class="value down">7585 元/吨</div>
+                <div class="change">较上次 -130元 | 2026-03-30 09:48</div>
+                <div class="prev">上次: 7715元 | 2026-03-29 08:43</div>
                 <div class="position">处于近1年中高价位</div>
             </div>
             </div>
@@ -84,7 +84,7 @@
             <div class="card-title">二、数据统计</div>
             <table class="stats-table">
                 <tr><th>厂商-油品</th><th>数据条数</th><th>数据天数</th><th>历史低价</th><th>历史高价</th></tr>
-                <tr><tr><td>中石化 0#柴油</td><td>13条</td><td>10天</td><td>7500</td><td>9265</td></tr></tr><tr><tr><td>垦利 0#柴油</td><td>16条</td><td>5天</td><td>7065</td><td>7535</td></tr></tr><tr><tr><td>金诚 95#汽油</td><td>37条</td><td>20天</td><td>6370</td><td>8290</td></tr></tr>
+                <tr><tr><td>中石化 0#柴油</td><td>13条</td><td>10天</td><td>7500</td><td>9265</td></tr></tr><tr><tr><td>垦利 0#柴油</td><td>19条</td><td>6天</td><td>7065</td><td>7535</td></tr></tr><tr><tr><td>金诚 95#汽油</td><td>38条</td><td>21天</td><td>6370</td><td>8290</td></tr></tr>
             </table>
         </div>
         
@@ -102,7 +102,7 @@
         <div class="card">
             <div class="card-title">五、操作建议</div>
             <div class="advice">
-                <div class="advice-item"><span class="advice-tag tag-avoid">中石化 0#柴油</span><span class="advice-text">价格乱，暂不追高</span></div><div class="advice-item"><span class="advice-tag tag-watch">垦利 0#柴油</span><span class="advice-text">观望，等7200以下</span></div><div class="advice-item"><span class="advice-tag tag-buy">金诚 95#汽油</span><span class="advice-text">7700附近可小补</span></div>
+                <div class="advice-item"><span class="advice-tag tag-avoid">中石化 0#柴油</span><span class="advice-text">价格乱，暂不追高</span></div><div class="advice-item"><span class="advice-tag tag-watch">垦利 0#柴油</span><span class="advice-text">观望，等7200以下</span></div><div class="advice-item"><span class="advice-tag tag-buy">金诚 95#汽油</span><span class="advice-text">价格偏低可补</span></div>
             </div>
         </div>
         
@@ -137,20 +137,20 @@
             tooltip: { trigger: 'axis' },
             legend: { data: ["\u4e2d\u77f3\u53160#\u67f4\u6cb9", "\u57a6\u52290#\u67f4\u6cb9"], bottom: 0 },
             grid: { left: '3%', right: '4%', bottom: 60, containLabel: true },
-            xAxis: { type: 'category', boundaryGap: false, data: ["03/14", "03/16", "03/17", "03/18", "03/19", "03/20", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29"] },
+            xAxis: { type: 'category', boundaryGap: false, data: ["03/14", "03/16", "03/17", "03/18", "03/19", "03/20", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29", "03/30"] },
             yAxis: { type: 'value', name: '元/吨', nameLocation: 'end' },
             dataZoom: [{ type: 'inside', start: 0, end: 100 }, { type: 'slider', start: 0, end: 100, height: 20, bottom: 5 }],
-            series: [{ name: '中石化0#柴油', type: 'line', data: [7700.0, 7500.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0], smooth: true, itemStyle: {color: '#4472C4'}, connectNulls: true }, { name: '垦利0#柴油', type: 'line', data: [null, null, null, null, null, null, null, 7435.0, 7095.0, 7065.0, 7255.0, 7235.0], smooth: true, itemStyle: {color: '#27AE60'}, connectNulls: true }]
+            series: [{ name: '中石化0#柴油', type: 'line', data: [7700.0, 7500.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0], smooth: true, itemStyle: {color: '#4472C4'}, connectNulls: true }, { name: '垦利0#柴油', type: 'line', data: [null, null, null, null, null, null, null, 7435.0, 7095.0, 7065.0, 7255.0, 7235.0, 7305.0], smooth: true, itemStyle: {color: '#27AE60'}, connectNulls: true }]
         };
         
         var gasOption = {
             tooltip: { trigger: 'axis' },
             legend: { data: ["\u91d1\u8bda95#\u6c7d\u6cb9"], bottom: 0 },
             grid: { left: '3%', right: '4%', bottom: 60, containLabel: true },
-            xAxis: { type: 'category', boundaryGap: false, data: ["03/10", "03/11", "03/12", "03/13", "03/14", "03/15", "03/16", "03/17", "03/18", "03/19", "03/20", "03/21", "03/22", "03/23", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29"] },
+            xAxis: { type: 'category', boundaryGap: false, data: ["03/10", "03/11", "03/12", "03/13", "03/14", "03/15", "03/16", "03/17", "03/18", "03/19", "03/20", "03/21", "03/22", "03/23", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29", "03/30"] },
             yAxis: { type: 'value', name: '元/吨', nameLocation: 'end' },
             dataZoom: [{ type: 'inside', start: 0, end: 100 }, { type: 'slider', start: 0, end: 100, height: 20, bottom: 5 }],
-            series: [{ name: '金诚95#汽油', type: 'line', data: [7870.0, 7540.0, 7430.0, 7205.0, 6955.0, 6855.0, 6855.0, 6855.0, 7155.0, 7265.0, 7365.0, 7620.0, 7865.0, 8290.0, 8245.0, 7900.0, 7800.0, 7730.0, 7715.0, 7715.0], smooth: true, itemStyle: {color: '#E74C3C'}, connectNulls: true }]
+            series: [{ name: '金诚95#汽油', type: 'line', data: [7870.0, 7540.0, 7430.0, 7205.0, 6955.0, 6855.0, 6855.0, 6855.0, 7155.0, 7265.0, 7365.0, 7620.0, 7865.0, 8290.0, 8245.0, 7900.0, 7800.0, 7730.0, 7715.0, 7715.0, 7585.0], smooth: true, itemStyle: {color: '#E74C3C'}, connectNulls: true }]
         };
         
         var intlOption = {
@@ -160,8 +160,8 @@
             xAxis: { type: 'category', boundaryGap: false, data: ["03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17", "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30"] },
             yAxis: { type: 'value', name: '美元/桶', nameLocation: 'end' },
             series: [
-                { name: '布伦特原油', type: 'line', data: [83.53, 84.66, 83.66, 77.92, 75.09, 76.89, 75.35, 81.26, 76.69, 80.09, 79.8, 77.29, 76.21, 81.89, 80.63, 81.36, 82.7, 75.84, 75.16, 83.0, 81.52, 76.57, 80.1, 75.51, 78.91, 79.62, 79.47, 75.81, 84.63, 75.61], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
-                { name: 'WTI原油', type: 'line', data: [80.53, 81.66, 80.66, 74.92, 72.09, 73.89, 72.35, 78.26, 73.69, 77.09, 76.8, 74.29, 73.21, 78.89, 77.63, 78.36, 79.7, 72.84, 72.16, 80.0, 78.52, 73.57, 77.1, 72.51, 75.91, 76.62, 76.47, 72.81, 81.63, 72.61], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
+                { name: '布伦特原油', type: 'line', data: [77.76, 77.38, 78.52, 80.12, 81.23, 84.08, 77.46, 81.99, 83.91, 79.78, 78.88, 80.93, 81.95, 84.66, 76.12, 78.89, 79.29, 80.08, 78.58, 78.31, 79.06, 77.28, 76.36, 82.79, 84.77, 78.1, 75.13, 78.41, 79.48, 76.71], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
+                { name: 'WTI原油', type: 'line', data: [74.76, 74.38, 75.52, 77.12, 78.23, 81.08, 74.46, 78.99, 80.91, 76.78, 75.88, 77.93, 78.95, 81.66, 73.12, 75.89, 76.29, 77.08, 75.58, 75.31, 76.06, 74.28, 73.36, 79.79, 81.77, 75.1, 72.13, 75.41, 76.48, 73.71], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
             ]
         };
         
