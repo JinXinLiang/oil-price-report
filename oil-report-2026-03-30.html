@@ -49,33 +49,33 @@
     <div class="container">
         <div class="header">
             <h1>油价分析报告</h1>
-            <div class="subtitle">生成时间: 2026-03-30 15:22</div>
+            <div class="subtitle">生成时间: 2026-03-30 15:32</div>
         </div>
         
         <div class="card">
             <div class="card-title">一、最新价格</div>
             <div class="price-grid">
                 
-            <div class="price-item high">
+            <div class="price-item ">
                 <div class="label">中石化 0#柴油</div>
                 <div class="value ">9100 元/吨</div>
                 <div class="change">较上次 +0元 | 2026-03-27 08:45</div>
                 <div class="prev">上次: 9100元 | 2026-03-26 10:34</div>
-                <div class="position">近1年高价区 📈</div>
+                <div class="position">数据不足</div>
             </div>
             <div class="price-item ">
                 <div class="label">垦利 0#柴油</div>
                 <div class="value up">7305 元/吨</div>
                 <div class="change">较上次 +40元 | 2026-03-30 11:09</div>
                 <div class="prev">上次: 7265元 | 2026-03-30 09:48</div>
-                <div class="position">处于近1年中间价位</div>
+                <div class="position">数据不足</div>
             </div>
             <div class="price-item high">
                 <div class="label">金诚 95#汽油</div>
                 <div class="value down">7585 元/吨</div>
                 <div class="change">较上次 -15元 | 2026-03-30 09:48</div>
                 <div class="prev">上次: 7600元 | 2026-03-30 09:31</div>
-                <div class="position">处于近1年中高价位</div>
+                <div class="position">处于近30天中高价位</div>
             </div>
             </div>
         </div>
@@ -160,8 +160,8 @@
             xAxis: { type: 'category', boundaryGap: false, data: ["03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17", "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30"] },
             yAxis: { type: 'value', name: '美元/桶', nameLocation: 'end' },
             series: [
-                { name: '布伦特原油', type: 'line', data: [77.3, 76.88, 75.79, 75.59, 83.99, 82.56, 81.87, 82.13, 82.71, 80.22, 76.53, 82.32, 76.2, 83.22, 76.91, 77.76, 75.75, 77.61, 77.54, 79.01, 79.94, 81.75, 76.31, 77.81, 84.09, 83.29, 77.63, 79.2, 78.3, 77.45], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
-                { name: 'WTI原油', type: 'line', data: [74.3, 73.88, 72.79, 72.59, 80.99, 79.56, 78.87, 79.13, 79.71, 77.22, 73.53, 79.32, 73.2, 80.22, 73.91, 74.76, 72.75, 74.61, 74.54, 76.01, 76.94, 78.75, 73.31, 74.81, 81.09, 80.29, 74.63, 76.2, 75.3, 74.45], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
+                { name: '布伦特原油', type: 'line', data: [76.31, 77.79, 83.92, 82.62, 75.39, 76.73, 83.61, 75.65, 84.2, 75.27, 79.04, 75.25, 80.01, 81.81, 80.68, 75.59, 77.91, 75.6, 75.86, 83.56, 75.18, 76.67, 84.64, 76.85, 75.99, 81.17, 81.7, 75.65, 76.84, 76.97], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
+                { name: 'WTI原油', type: 'line', data: [73.31, 74.79, 80.92, 79.62, 72.39, 73.73, 80.61, 72.65, 81.2, 72.27, 76.04, 72.25, 77.01, 78.81, 77.68, 72.59, 74.91, 72.6, 72.86, 80.56, 72.18, 73.67, 81.64, 73.85, 72.99, 78.17, 78.7, 72.65, 73.84, 73.97], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
             ]
         };
         
