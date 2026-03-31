@@ -9,17 +9,20 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; }
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .header { background: linear-gradient(135deg, #4472C4, #2F5496); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }
+        .header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }
         .header h1 { font-size: 28px; margin-bottom: 10px; }
-        .header .subtitle { opacity: 0.9; font-size: 14px; }
+        .header .subtitle { opacity: 0.8; font-size: 14px; }
+        .header .intl-info { margin-top: 15px; padding: 12px 16px; background: rgba(255,255,255,0.1); border-radius: 8px; font-size: 14px; }
+        .header .risk-badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; background: #e74c3c; }
         .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .card-title { font-size: 18px; font-weight: 600; margin-bottom: 15px; color: #1a1a1a; border-left: 4px solid #4472C4; padding-left: 12px; }
-        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
         .price-item { background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #4472C4; }
         .price-item.high { border-left-color: #e74c3c; background: #fff5f5; }
         .price-item.low { border-left-color: #27ae60; background: #f0fff4; }
-        .price-item .label { font-size: 14px; color: #666; margin-bottom: 6px; font-weight: 500; }
-        .price-item .value { font-size: 28px; font-weight: 700; color: #1a1a1a; }
+        .price-item .label { font-size: 13px; color: #666; margin-bottom: 6px; font-weight: 600; text-transform: uppercase; }
+        .price-item .value { font-size: 32px; font-weight: 800; color: #1a1a1a; }
+        .price-item .value .unit { font-size: 14px; font-weight: normal; color: #888; }
         .price-item .value.up { color: #e74c3c; }
         .price-item .value.down { color: #27ae60; }
         .price-item .change { font-size: 13px; color: #888; margin-top: 4px; }
@@ -27,20 +30,26 @@
         .price-item .position { font-size: 12px; color: #fff; margin-top: 8px; padding: 4px 8px; background: #4472C4; border-radius: 4px; display: inline-block; }
         .price-item.high .position { background: #e74c3c; }
         .price-item.low .position { background: #27ae60; }
-        .chart-container { height: 300px; margin-top: 15px; }
+        .price-item .trend { font-size: 12px; color: #888; margin-top: 6px; }
+        .chart-container { height: 280px; margin-top: 15px; }
         .stats-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         .stats-table th, .stats-table td { padding: 10px; text-align: center; border-bottom: 1px solid #eee; font-size: 13px; }
         .stats-table th { background: #f5f7fa; font-weight: 600; color: #666; }
         .advice { background: #f8f9fa; padding: 20px; border-radius: 8px; }
-        .advice-item { display: flex; align-items: center; margin-bottom: 12px; padding: 12px; background: white; border-radius: 6px; flex-wrap: wrap; gap: 8px; }
-        .advice-tag { padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .advice-item { display: flex; align-items: flex-start; margin-bottom: 12px; padding: 12px; background: white; border-radius: 6px; flex-wrap: wrap; gap: 8px; line-height: 1.6; }
+        .advice-tag { padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; white-space: nowrap; }
         .tag-watch { background: #fff3cd; color: #856404; }
         .tag-buy { background: #d4edda; color: #155724; }
-        .tag-avoid { background: #f8d7da; color: #721c24; }
-        .advice-text { font-size: 14px; color: #333; }
-        .outlook-content { line-height: 1.8; font-size: 14px; color: #555; }
-        .outlook-content p { margin-bottom: 10px; }
-        .outlook-content ul { margin-left: 20px; margin-bottom: 10px; }
+        .tag-neutral { background: #e8f4fd; color: #1a5276; }
+        .advice-text { font-size: 14px; color: #333; flex: 1; }
+        .events-list { background: #1a1a2e; border-radius: 8px; padding: 15px; }
+        .event-item { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 13px; color: #eee; line-height: 1.5; }
+        .event-item:last-child { border-bottom: none; }
+        .evt-critical .evt-sev { color: #ff4757; font-weight: bold; }
+        .evt-high .evt-sev { color: #ffa502; font-weight: bold; }
+        .evt-medium .evt-sev { color: #7fd3fa; }
+        .outlook-content { line-height: 1.9; font-size: 14px; color: #555; background: #f8f9fa; padding: 20px; border-radius: 8px; }
+        .outlook-content p { margin-bottom: 8px; }
         .footer { text-align: center; padding: 20px; color: #888; font-size: 12px; }
         @media (max-width: 768px) { .container { padding: 10px; } .header { padding: 20px; } .header h1 { font-size: 22px; } .price-grid { grid-template-columns: 1fr; } }
     </style>
@@ -48,43 +57,49 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>油价分析报告</h1>
-            <div class="subtitle">生成时间: 2026-03-31 15:26</div>
+            <h1>🛢️ 油价分析报告</h1>
+            <div class="subtitle">生成时间: 2026-03-31 15:35 | 风险评级：<span class="risk-badge">极高风险</span></div>
+            <div class="intl-info">
+                🌐 国际油价：布伦特 <strong>$113.0 (+0.22%)</strong> | WTI <strong>$102.9</strong>
+            </div>
         </div>
         
         <div class="card">
             <div class="card-title">一、最新价格</div>
             <div class="price-grid">
                 
-            <div class="price-item high">
-                <div class="label">中石化 0#柴油</div>
-                <div class="value ">9100 元/吨</div>
-                <div class="change">较上次 +0元 | 2026-03-31 08:42</div>
-                <div class="prev">上次: 9100元 | 2026-03-30 08:58</div>
-                <div class="position">近30天高价区 📈</div>
-            </div>
-            <div class="price-item ">
-                <div class="label">垦利 0#柴油</div>
-                <div class="value up">7375 元/吨</div>
-                <div class="change">较上次 +70元 | 2026-03-31 09:08</div>
-                <div class="prev">上次: 7305元 | 2026-03-30 11:09</div>
-                <div class="position">数据不足</div>
-            </div>
-            <div class="price-item high">
-                <div class="label">金诚 95#汽油</div>
-                <div class="value up">7605 元/吨</div>
-                <div class="change">较上次 +20元 | 2026-03-31 10:34</div>
-                <div class="prev">上次: 7585元 | 2026-03-30 09:48</div>
-                <div class="position">处于近30天中高价位</div>
-            </div>
+        <div class="price-item high">
+            <div class="label">中石化 0#柴油</div>
+            <div class="value ">9100 <span class="unit">元/吨</span></div>
+            <div class="change">较上次 +0元 | 2026-03-31 08:42</div>
+            <div class="prev">上次: 9100元 | 2026-03-30 08:58</div>
+            <div class="position">近30天高价区 📈</div>
+            <div class="trend">7日趋势：基本持平</div>
+        </div>
+        <div class="price-item ">
+            <div class="label">垦利 0#柴油</div>
+            <div class="value up">7375 <span class="unit">元/吨</span></div>
+            <div class="change">较上次 +70元 | 2026-03-31 09:08</div>
+            <div class="prev">上次: 7305元 | 2026-03-30 11:09</div>
+            
+            <div class="trend">7日趋势：下跌160元</div>
+        </div>
+        <div class="price-item high">
+            <div class="label">金诚 95#汽油</div>
+            <div class="value up">7605 <span class="unit">元/吨</span></div>
+            <div class="change">较上次 +20元 | 2026-03-31 10:34</div>
+            <div class="prev">上次: 7585元 | 2026-03-30 09:48</div>
+            <div class="position">近30天中高价位</div>
+            <div class="trend">7日趋势：下跌295元</div>
+        </div>
             </div>
         </div>
         
         <div class="card">
             <div class="card-title">二、数据统计</div>
             <table class="stats-table">
-                <tr><th>厂商-油品</th><th>数据条数</th><th>数据天数</th><th>历史低价</th><th>历史高价</th></tr>
-                <tr><tr><td>中石化 0#柴油</td><td>15条</td><td>12天</td><td>7500</td><td>9265</td></tr></tr><tr><tr><td>垦利 0#柴油</td><td>20条</td><td>7天</td><td>7065</td><td>7535</td></tr></tr><tr><tr><td>金诚 95#汽油</td><td>42条</td><td>22天</td><td>6370</td><td>8290</td></tr></tr>
+                <tr><th>厂商-油品</th><th>数据条数</th><th>覆盖天数</th><th>历史低价</th><th>历史高价</th></tr>
+                <tr><tr><td>中石化 0#柴油</td><td>15条</td><td>17天</td><td>7500</td><td>9265</td></tr></tr><tr><tr><td>垦利 0#柴油</td><td>20条</td><td>7天</td><td>7065</td><td>7535</td></tr></tr><tr><tr><td>金诚 95#汽油</td><td>42条</td><td>22天</td><td>6370</td><td>8290</td></tr></tr>
             </table>
         </div>
         
@@ -95,81 +110,57 @@
         </div>
         
         <div class="card">
-            <div class="card-title">四、国际原油价格走势</div>
-            <div id="chart-intl" class="chart-container"></div>
+            <div class="card-title">四、地缘政治与市场动态</div>
+            <div class="events-list"><div class="event-item evt-critical"><span class="evt-sev">[CRITICAL]</span> 美以联合轰炸伊朗已30天，霍尔木兹海峡基本关闭</div><div class="event-item evt-critical"><span class="evt-sev">[CRITICAL]</span> 特朗普威胁摧毁伊朗油田、发电厂和哈格岛</div><div class="event-item evt-critical"><span class="evt-sev">[CRITICAL]</span> 油价或创史上最大单月涨幅</div><div class="event-item evt-high"><span class="evt-sev">[HIGH]</span> 胡塞武装参战，红海出口受阻风险上升</div></div>
         </div>
         
         <div class="card">
             <div class="card-title">五、操作建议</div>
             <div class="advice">
-                <div class="advice-item"><span class="advice-tag tag-watch">中石化 0#柴油</span><span class="advice-text">价格仍将波动，建议观望</span></div><div class="advice-item"><span class="advice-tag tag-watch">垦利 0#柴油</span><span class="advice-text">观望，等7200以下</span></div><div class="advice-item"><span class="advice-tag tag-buy">金诚 95#汽油</span><span class="advice-text">7700附近可小补</span></div>
+                <div class="advice-item"><span class="advice-tag tag-watch">中石化 0#柴油</span><span class="advice-text">国际油价极高（WTI$102.9/Brent$113.0），全球供应紧张；地缘风险：美以联合轰炸伊朗已30天，霍尔木兹海峡基/特朗普威胁摧毁伊朗油田、发电厂和哈格岛；市场高度不确定，跟踪观望，谨慎操作</span></div><div class="advice-item"><span class="advice-tag tag-watch">垦利 0#柴油</span><span class="advice-text">国际油价极高（WTI$102.9/Brent$113.0），全球供应紧张；地缘风险：美以联合轰炸伊朗已30天，霍尔木兹海峡基/特朗普威胁摧毁伊朗油田、发电厂和哈格岛；国内外共振上涨，暂缓采购，等回调</span></div><div class="advice-item"><span class="advice-tag tag-watch">金诚 95#汽油</span><span class="advice-text">国际油价极高（WTI$102.9/Brent$113.0），全球供应紧张；地缘风险：美以联合轰炸伊朗已30天，霍尔木兹海峡基/特朗普威胁摧毁伊朗油田、发电厂和哈格岛；市场高度不确定，跟踪观望，谨慎操作</span></div>
             </div>
         </div>
         
         <div class="card">
-            <div class="card-title">六、下周展望</div>
+            <div class="card-title">六、趋势展望</div>
             <div class="outlook-content">
-                
-    <p><strong>国际油价：</strong>预计短期震荡，需关注地缘政治影响。</p>
-    <p><strong>国内市场：</strong></p>
-    <ul>
-        <li>柴油：预计7000-7500元/吨区间震荡</li>
-        <li>汽油：金诚95#若守住7700，有望整理</li>
-        <li>中石化：价格仍将波动，建议观望</li>
-    </ul>
-    <p><strong>风险提示：</strong>关注OPEC+动态、俄罗斯出口政策、中东局势。</p>
-    
+                <p><strong>国际油价：</strong>当前布伦特$113.0，处于极高水平。</p><p><strong>地缘局势：</strong>美以联合轰炸伊朗已30天，霍尔木兹海峡基本关闭；特朗普威胁摧毁伊朗油田、发电厂和哈格岛。</p><p><strong>关键节点：</strong>2026-04-06（特朗普设定的霍尔木兹重新开放最后期限）。</p><p><strong>风险：</strong>上行：若霍尔木兹海峡持续关闭或胡塞武装扩大行动，油价有实质性飙升至$150-200的风...；下行：若美伊达成停火协议，油价可能快速回落10-15%...</p>
             </div>
         </div>
         
         <div class="footer">
-            数据来源：民营油厂报价 + 中石化报价 | 仅供参考，不构成投资建议<br>
-            <strong>地缘政治参考：</strong>俄罗斯4月1日暂停汽油出口、伊朗局势需关注
+            数据来源：民营油厂报价 + 中石化 | 分析仅供参考，不构成投资决策<br>
+            ⚠️ 重要提示：4月6日为霍尔木兹海峡重新开放关键节点，届时或有大幅波动
         </div>
     </div>
     
     <script>
         var chartDiesel = echarts.init(document.getElementById('chart-diesel'));
         var chartGas = echarts.init(document.getElementById('chart-gas'));
-        var chartIntl = echarts.init(document.getElementById('chart-intl'));
         
         var dieselOption = {
             tooltip: { trigger: 'axis' },
-            legend: { data: ["\u4e2d\u77f3\u53160#\u67f4\u6cb9", "\u57a6\u52290#\u67f4\u6cb9"], bottom: 0 },
+            legend: { data: ["\u4e2d\u77f3\u5316", "\u57a6\u5229"], bottom: 0 },
             grid: { left: '3%', right: '4%', bottom: 60, containLabel: true },
             xAxis: { type: 'category', boundaryGap: false, data: ["03/14", "03/16", "03/17", "03/18", "03/19", "03/20", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29", "03/30", "03/31"] },
             yAxis: { type: 'value', name: '元/吨', nameLocation: 'end' },
             dataZoom: [{ type: 'inside', start: 0, end: 100 }, { type: 'slider', start: 0, end: 100, height: 20, bottom: 5 }],
-            series: [{ name: '中石化0#柴油', type: 'line', data: [7700.0, 7500.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0], smooth: true, itemStyle: {color: '#4472C4'}, connectNulls: true }, { name: '垦利0#柴油', type: 'line', data: [null, null, null, null, null, null, null, 7435.0, 7095.0, 7065.0, 7255.0, 7235.0, 7305.0, 7375.0], smooth: true, itemStyle: {color: '#27AE60'}, connectNulls: true }]
+            series: [{ name: '中石化', type: 'line', data: [7700.0, 7500.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0], smooth: true, itemStyle: {color: '#4472C4'}, connectNulls: true }, { name: '垦利', type: 'line', data: [null, null, null, null, null, null, null, 7435.0, 7095.0, 7065.0, 7255.0, 7235.0, 7305.0, 7375.0], smooth: true, itemStyle: {color: '#27AE60'}, connectNulls: true }]
         };
         
         var gasOption = {
             tooltip: { trigger: 'axis' },
-            legend: { data: ["\u91d1\u8bda95#\u6c7d\u6cb9"], bottom: 0 },
+            legend: { data: ["\u91d1\u8bda"], bottom: 0 },
             grid: { left: '3%', right: '4%', bottom: 60, containLabel: true },
             xAxis: { type: 'category', boundaryGap: false, data: ["03/10", "03/11", "03/12", "03/13", "03/14", "03/15", "03/16", "03/17", "03/18", "03/19", "03/20", "03/21", "03/22", "03/23", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29", "03/30", "03/31"] },
             yAxis: { type: 'value', name: '元/吨', nameLocation: 'end' },
             dataZoom: [{ type: 'inside', start: 0, end: 100 }, { type: 'slider', start: 0, end: 100, height: 20, bottom: 5 }],
-            series: [{ name: '金诚95#汽油', type: 'line', data: [7870.0, 7540.0, 7430.0, 7205.0, 6955.0, 6855.0, 6855.0, 6855.0, 7155.0, 7265.0, 7365.0, 7620.0, 7865.0, 8290.0, 8245.0, 7900.0, 7800.0, 7730.0, 7715.0, 7715.0, 7585.0, 7605.0], smooth: true, itemStyle: {color: '#E74C3C'}, connectNulls: true }]
-        };
-        
-        var intlOption = {
-            tooltip: { trigger: 'axis' },
-            legend: { data: ['布伦特原油', 'WTI原油'], bottom: 0 },
-            grid: { left: '3%', right: '4%', bottom: '15%', containLabel: true },
-            xAxis: { type: 'category', boundaryGap: false, data: ["03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17", "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"] },
-            yAxis: { type: 'value', name: '美元/桶', nameLocation: 'end' },
-            series: [
-                { name: '布伦特原油', type: 'line', data: [83.98, 82.16, 78.2, 82.22, 82.84, 77.11, 76.08, 82.71, 78.26, 84.09, 78.54, 78.08, 78.3, 75.41, 81.38, 75.07, 76.91, 78.29, 77.6, 81.27, 83.47, 78.77, 75.84, 78.62, 75.94, 76.54, 81.89, 82.2, 78.44, 83.16], smooth: true, itemStyle: {color: '#FF6B6B'}, connectNulls: true },
-                { name: 'WTI原油', type: 'line', data: [80.98, 79.16, 75.2, 79.22, 79.84, 74.11, 73.08, 79.71, 75.26, 81.09, 75.54, 75.08, 75.3, 72.41, 78.38, 72.07, 73.91, 75.29, 74.6, 78.27, 80.47, 75.77, 72.84, 75.62, 72.94, 73.54, 78.89, 79.2, 75.44, 80.16], smooth: true, itemStyle: {color: '#4ECDC4'}, connectNulls: true }
-            ]
+            series: [{ name: '金诚', type: 'line', data: [7870.0, 7540.0, 7430.0, 7205.0, 6955.0, 6855.0, 6855.0, 6855.0, 7155.0, 7265.0, 7365.0, 7620.0, 7865.0, 8290.0, 8245.0, 7900.0, 7800.0, 7730.0, 7715.0, 7715.0, 7585.0, 7605.0], smooth: true, itemStyle: {color: '#4472C4'}, connectNulls: true }]
         };
         
         chartDiesel.setOption(dieselOption);
         chartGas.setOption(gasOption);
-        chartIntl.setOption(intlOption);
-        
-        window.addEventListener('resize', function() { chartDiesel.resize(); chartGas.resize(); chartIntl.resize(); });
+        window.addEventListener('resize', function() { chartDiesel.resize(); chartGas.resize(); });
     </script>
 </body>
 </html>
