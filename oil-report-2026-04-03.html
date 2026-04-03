@@ -8,33 +8,45 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f6fa;color:#2c3e50;padding:16px}
-.header{text-align:center;margin-bottom:20px}
+.header{text-align:center;margin-bottom:16px}
 .header h1{font-size:20px;color:#1a1a2e;margin-bottom:4px}
 .header .meta{font-size:12px;color:#888}
-.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .card-title{font-size:15px;font-weight:600;color:#1a1a2e}
-.price{font-size:28px;font-weight:700;color:#2c3e50}
-.price small{font-size:13px;font-weight:400;color:#888;margin-left:4px}
-.badge-row{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
-.badge{padding:3px 8px;border-radius:6px;font-size:11px;font-weight:600}
-.badge-up{background:#ffe5e5;color:#c0392b}
-.badge-down{background:#e5f9e5;color:#27ae60}
-.badge-neutral{background:#f0f0f0;color:#666}
-.badge-flash{background:#fff3cd;color:#d35400}
-.action-box{border-radius:8px;padding:10px 14px;margin-top:10px;display:flex;align-items:center;gap:8px}
-.action-icon{font-size:20px}
-.action-text{font-size:14px;font-weight:600}
-.action-reason{font-size:12px;margin-top:4px;opacity:0.85}
-.chart{width:100%;height:180px}
-.info-row{display:flex;justify-content:space-between;font-size:12px;color:#666;margin-top:8px}
+.price{font-size:26px;font-weight:700;color:#2c3e50}
+.price small{font-size:12px;font-weight:400;color:#888;margin-left:3px}
+.badge{padding:2px 7px;border-radius:5px;font-size:11px;font-weight:600;margin-right:4px}
+.b-up{background:#ffe5e5;color:#c0392b}
+.b-down{background:#e5f9e5;color:#27ae60}
+.b-neutral{background:#f0f0f0;color:#666}
+.b-flash{background:#fff3cd;color:#d35400}
+.info-row{display:flex;justify-content:space-between;font-size:12px;color:#666;padding:3px 0}
 .info-label{color:#999}
-.summary{background:#1a1a2e;color:#fff;border-radius:12px;padding:16px;margin-top:16px}
-.summary h3{font-size:14px;margin-bottom:10px}
-.summary-item{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:13px}
-.summary-item:last-child{border:none}
-.summary-action{font-weight:600}
-.policy{background:#fff;border-radius:8px;padding:12px;font-size:12px;color:#555;margin-top:12px;border-left:3px solid #3498db}
+.action-box{border-radius:8px;padding:9px 12px;margin-top:9px;display:flex;align-items:center;gap:8px}
+.action-icon{font-size:18px}
+.action-text{font-size:14px;font-weight:700}
+.action-reason{font-size:11px;margin-top:3px;opacity:0.85;line-height:1.4}
+.chart{width:100%;height:160px;margin-top:8px}
+.summary{background:#1a1a2e;color:#fff;border-radius:12px;padding:14px;margin-top:14px}
+.summary h3{font-size:13px;margin-bottom:8px}
+.s-item{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:12px}
+.s-item:last-child{border:none}
+.policy{background:#fff;border-radius:8px;padding:10px 12px;font-size:12px;color:#555;margin-top:10px;border-left:3px solid #3498db;line-height:1.6}
+.geo-section{background:#fff;border-radius:12px;padding:14px;margin-bottom:14px;border:1.5px solid #c0392b30}
+.geo-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.geo-title{font-size:14px;font-weight:600;color:#1a1a2e}
+.geo-badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:5px;background:#c0392b18;color:#c0392b}
+.geo-conclusion{background:#c0392b10;border-radius:8px;padding:10px 12px;font-size:12px;color:#333;line-height:1.6;margin-bottom:10px}
+.geo-conclusion strong{color:#c0392b}
+.geo-event{background:#f8f9fa;border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:12px;border-left:3px solid #ccc}
+.geo-event-time{font-size:10px;color:#999;margin-bottom:2px}
+.geo-event-text{font-weight:600;color:#1a1a2e;margin-bottom:3px}
+.geo-event-meta{display:flex;gap:8px;font-size:11px;color:#666;margin-bottom:3px}
+.geo-impact{display:inline-block;padding:1px 6px;border-radius:4px;font-size:10px;background:#ffe5e5;color:#c0392b;margin-right:4px}
+.geo-meaning{color:#555;line-height:1.5}
+.geo-source{font-size:10px;color:#aaa;margin-top:2px}
+.why{font-size:11px;color:#888;margin-top:3px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -43,51 +55,77 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <div class="meta">2026-04-03 · 库存状态：高库存</div>
 </div>
 
-<div class="card">
+<div class="geo-section">
+<div class="geo-header">
+<div class="geo-title">🌐 地缘政治 / 政策风险</div>
+<div class="geo-badge">极高 ⚠️（90分）</div>
+</div>
+<div class="geo-conclusion">
+<strong>结论：</strong>供应中断风险极大，无论价格高低均建议适量补货防踏空。
+</div>
+<div class="geo-event">
+<div class="geo-event-time"></div>
+<div class="geo-event-text">从霍尔木兹海峡到美联储，油价冲击改写黄金走势？ - 新浪财经</div>
+<div class="geo-event-meta">
+<span class="geo-impact" style="background:#f0f0f0;color:#888"></span>
+<span>来源：Google News RSS</span>
+<span>可信度：100</span>
+</div>
+<div class="geo-meaning"><strong>对你意味着：</strong></div>
+<div class="why"><strong>为什么影响油价：</strong></div>
+</div><div class="geo-event">
+<div class="geo-event-time"></div>
+<div class="geo-event-text">报道：OPEC+周日会议或增产，以应对霍尔木兹海峡极端波动 - 华尔街见闻</div>
+<div class="geo-event-meta">
+<span class="geo-impact" style="background:#f0f0f0;color:#888"></span>
+<span>来源：Google News RSS</span>
+<span>可信度：100</span>
+</div>
+<div class="geo-meaning"><strong>对你意味着：</strong></div>
+<div class="why"><strong>为什么影响油价：</strong></div>
+</div><div class="geo-event">
+<div class="geo-event-time"></div>
+<div class="geo-event-text">从霍尔木兹海峡到美联储，油价冲击改写黄金走势？ - 新浪财经</div>
+<div class="geo-event-meta">
+<span class="geo-impact" style="background:#f0f0f0;color:#888"></span>
+<span>来源：Google News RSS</span>
+<span>可信度：100</span>
+</div>
+<div class="geo-meaning"><strong>对你意味着：</strong></div>
+<div class="why"><strong>为什么影响油价：</strong></div>
+</div></div><div class="card">
 <div class="card-header">
 <div class="card-title">垦利 0#柴油</div>
 <div class="price">7575<small>元/吨</small></div>
 </div>
-<div class="badge-row">
-<span class="badge badge-neutral">→ 震荡</span>
+<div style="margin-bottom:8px">
+<span class="badge b-neutral">→ 震荡</span>
 
 </div>
-<div class="info-row">
-<span class="info-label">近5天区间</span>
-<span>7215 ~ 7575（均值 7329）</span>
-</div>
-<div class="info-row">
-<span class="info-label">近5天位置</span>
-<span>██████████ 100% 分位</span>
-</div>
-<div class="action-box" style="background:#e67e2220;border:1.5px solid #e67e22">
-<div class="action-icon">📤</div>
+<div class="info-row"><span class="info-label">近5天区间</span><span>7215 ~ 7575（均值 7329）</span></div>
+<div class="info-row"><span class="info-label">近5天位置</span><span>██████████ 100% 分位</span></div>
+<div class="info-row"><span class="info-label">全量历史</span><span>██████████ 100% 分位（34条）</span></div>
+<div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
+<div class="action-icon">🚨</div>
 <div>
-<div class="action-text" style="color:#e67e22">可出货</div>
-<div class="action-reason">库存高且价格偏高，建议加快出货</div>
+<div class="action-text" style="color:#c0392b">预警补货</div>
+<div class="action-reason">地缘风险极高(90)，供应中断风险极大，无论价格高低均建议适量补货防踏空；库存高且价格偏高，建议加快出货</div>
 </div>
 </div>
 <div class="chart" id="chart_垦利_0柴油"></div>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="card-header">
 <div class="card-title">中石化 0#柴油</div>
 <div class="price">8850<small>元/吨</small></div>
 </div>
-<div class="badge-row">
-<span class="badge badge-down">↓ 走弱</span>
+<div style="margin-bottom:8px">
+<span class="badge b-down">↓ 走弱</span>
 
 </div>
-<div class="info-row">
-<span class="info-label">近5天区间</span>
-<span>8850 ~ 9100（均值 9008）</span>
-</div>
-<div class="info-row">
-<span class="info-label">近5天位置</span>
-<span>░░░░░░░░░░ 0% 分位</span>
-</div>
-<div class="action-box" style="background:#f39c1220;border:1.5px solid #f39c12">
+<div class="info-row"><span class="info-label">近5天区间</span><span>8850 ~ 9100（均值 9008）</span></div>
+<div class="info-row"><span class="info-label">近5天位置</span><span>░░░░░░░░░░ 0% 分位</span></div>
+<div class="info-row"><span class="info-label">全量历史</span><span>███████░░░ 76% 分位（27条）</span></div>
+<div class="action-box" style="background:#f39c1218;border:1.5px solid #f39c12">
 <div class="action-icon">🛒</div>
 <div>
 <div class="action-text" style="color:#f39c12">可小补</div>
@@ -95,79 +133,42 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 </div>
 </div>
 <div class="chart" id="chart_中石化_0柴油"></div>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="card-header">
 <div class="card-title">金诚 95#汽油</div>
 <div class="price">7690<small>元/吨</small></div>
 </div>
-<div class="badge-row">
-<span class="badge badge-down">↓ 走弱</span>
+<div style="margin-bottom:8px">
+<span class="badge b-down">↓ 走弱</span>
 
 </div>
-<div class="info-row">
-<span class="info-label">近5天区间</span>
-<span>7500 ~ 7720（均值 7612）</span>
-</div>
-<div class="info-row">
-<span class="info-label">近5天位置</span>
-<span>████████░░ 86% 分位</span>
-</div>
-<div class="action-box" style="background:#e67e2220;border:1.5px solid #e67e22">
-<div class="action-icon">📤</div>
+<div class="info-row"><span class="info-label">近5天区间</span><span>7500 ~ 7720（均值 7612）</span></div>
+<div class="info-row"><span class="info-label">近5天位置</span><span>████████░░ 86% 分位</span></div>
+<div class="info-row"><span class="info-label">全量历史</span><span>██████░░░░ 69% 分位（58条）</span></div>
+<div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
+<div class="action-icon">🚨</div>
 <div>
-<div class="action-text" style="color:#e67e22">可出货</div>
-<div class="action-reason">库存高且价格偏高，建议加快出货</div>
+<div class="action-text" style="color:#c0392b">预警补货</div>
+<div class="action-reason">地缘风险极高(90)，供应中断风险极大，无论价格高低均建议适量补货防踏空；库存高且价格偏高，建议加快出货</div>
 </div>
 </div>
 <div class="chart" id="chart_金诚_95汽油"></div>
-</div>
-<div class="summary"><h3>📋 操作汇总</h3><div class="summary-item">
-<span>垦利 0#柴油</span>
-<span class="summary-action" style="color:#9b59b6">可出货</span>
-</div><div class="summary-item">
-<span>中石化 0#柴油</span>
-<span class="summary-action" style="color:#e74c3c">可小补</span>
-</div><div class="summary-item">
-<span>金诚 95#汽油</span>
-<span class="summary-action" style="color:#9b59b6">可出货</span>
-</div></div><div class="policy">📅 政策窗口：预计约04/17前后为下一轮调价窗口，具体以发改委公告为准</div>
-</body>
-<script>
-
-var chart_垦利_0柴油 = echarts.init(document.getElementById('chart_垦利_0柴油'));
-var option_垦利_0柴油 = {
-  tooltip: {trigger: 'axis', formatter: '{b}<br/>￥{c}'},
-  grid: {left: '3%', right: '4%', top: '8%', bottom: '3%', containLabel: true},
-  xAxis: {type: 'category', data: ["03-29 08:43", "03-29 09:18", "03-30 08:24", "03-30 09:48", "03-30 11:09", "03-31 09:08", "04-01 09:18", "04-02 09:30", "04-02 10:08", "04-02 10:11", "04-02 10:58", "04-02 10:58", "04-02 10:58", "04-03 09:10", "04-03 11:26", "04-03 09:10"], axisLabel: {fontSize: 10, color: '#888'}, axisLine: {lineStyle: {color: '#eee'}}, splitLine: {show: false}},
-  yAxis: {type: 'value', min: 7185.0, max: 7605.0, axisLabel: {fontSize: 10, color: '#888'}, splitLine: {lineStyle: {color: '#f5f5f5'}}, name: '元/吨', nameTextStyle: {fontSize: 10, color: '#ccc'}},
-  series: [{name: '报价', type: 'line', data: [7235.0, 7235.0, 7235.0, 7265.0, 7305.0, 7375.0, 7345.0, 7215.0, 7245.0, 7265.0, 7305.0, 7305.0, 7305.0, 7575.0, 7475.0, 7575.0], smooth: true, symbol: 'circle', symbolSize: 5, lineStyle: {width: 2, color: '#3498db'}, itemStyle: {color: '#3498db'}, areaStyle: {color: 'rgba(52,152,219,0.08)'}}]
-};
-chart_垦利_0柴油.setOption(option_垦利_0柴油);
-
-var chart_中石化_0柴油 = echarts.init(document.getElementById('chart_中石化_0柴油'));
-var option_中石化_0柴油 = {
-  tooltip: {trigger: 'axis', formatter: '{b}<br/>￥{c}'},
-  grid: {left: '3%', right: '4%', top: '8%', bottom: '3%', containLabel: true},
-  xAxis: {type: 'category', data: ["03-30 08:58", "03-31 08:42", "04-01 09:23", "04-02 09:30", "04-02 11:27", "04-02 11:27", "04-02 11:27", "04-03 08:58", "04-03 09:08", "04-03 12:00", "04-03 08:58", "04-03 09:08"], axisLabel: {fontSize: 10, color: '#888'}, axisLine: {lineStyle: {color: '#eee'}}, splitLine: {show: false}},
-  yAxis: {type: 'value', min: 8820.0, max: 9130.0, axisLabel: {fontSize: 10, color: '#888'}, splitLine: {lineStyle: {color: '#f5f5f5'}}, name: '元/吨', nameTextStyle: {fontSize: 10, color: '#ccc'}},
-  series: [{name: '报价', type: 'line', data: [9100.0, 9100.0, 9100.0, 9100.0, 9000.0, 9000.0, 9000.0, 9000.0, 8850.0, 9000.0, 9000.0, 8850.0], smooth: true, symbol: 'circle', symbolSize: 5, lineStyle: {width: 2, color: '#3498db'}, itemStyle: {color: '#3498db'}, areaStyle: {color: 'rgba(52,152,219,0.08)'}}]
-};
-chart_中石化_0柴油.setOption(option_中石化_0柴油);
-
-var chart_金诚_95汽油 = echarts.init(document.getElementById('chart_金诚_95汽油'));
-var option_金诚_95汽油 = {
-  tooltip: {trigger: 'axis', formatter: '{b}<br/>￥{c}'},
-  grid: {left: '3%', right: '4%', top: '8%', bottom: '3%', containLabel: true},
-  xAxis: {type: 'category', data: ["03-29 08:43", "03-29 09:18", "03-30 08:53", "03-30 09:09", "03-30 09:31", "03-30 09:48", "03-31 10:34", "04-01 10:22", "04-01 09:18", "04-01 09:31", "04-01 09:50", "04-01 09:59", "04-02 09:30", "04-02 10:52", "04-02 10:52", "04-02 10:52", "04-03 08:57", "04-03 09:13", "04-03 09:27", "04-03 08:57"], axisLabel: {fontSize: 10, color: '#888'}, axisLine: {lineStyle: {color: '#eee'}}, splitLine: {show: false}},
-  yAxis: {type: 'value', min: 7470.0, max: 7750.0, axisLabel: {fontSize: 10, color: '#888'}, splitLine: {lineStyle: {color: '#f5f5f5'}}, name: '元/吨', nameTextStyle: {fontSize: 10, color: '#ccc'}},
-  series: [{name: '报价', type: 'line', data: [7715.0, 7715.0, 7615.0, 7610.0, 7600.0, 7585.0, 7605.0, 7550.0, 7615.0, 7610.0, 7605.0, 7605.0, 7500.0, 7500.0, 7500.0, 7500.0, 7690.0, 7720.0, 7720.0, 7690.0], smooth: true, symbol: 'circle', symbolSize: 5, lineStyle: {width: 2, color: '#3498db'}, itemStyle: {color: '#3498db'}, areaStyle: {color: 'rgba(52,152,219,0.08)'}}]
-};
-chart_金诚_95汽油.setOption(option_金诚_95汽油);
-
-window.addEventListener('resize', function() {
-  [chart_垦利_0柴油,chart_中石化_0柴油,chart_金诚_95汽油].forEach(function(c){c.resize()});
-});
-</script>
-</html>
+</div><div class="summary"><h3>📋 操作汇总</h3><div class="s-item"><span>垦利 0#柴油</span><span style="color:#c0392b;font-weight:600">预警补货</span></div><div class="s-item"><span>中石化 0#柴油</span><span style="color:#f39c12;font-weight:600">可小补</span></div><div class="s-item"><span>金诚 95#汽油</span><span style="color:#c0392b;font-weight:600">预警补货</span></div></div><div class="policy">📅 政策窗口：预计约04/17前后为下一轮调价窗口，具体以发改委公告为准</div><script>var chart_垦利_0柴油=echarts.init(document.getElementById('chart_垦利_0柴油'));
+chart_垦利_0柴油.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
+grid:{left:'3%',right:'4%',top:'8%',bottom:'3%',containLabel:true},
+xAxis:{type:'category',data:["03-29 08:43", "03-29 09:18", "03-30 08:24", "03-30 09:48", "03-30 11:09", "03-31 09:08", "04-01 09:18", "04-02 09:30", "04-02 10:08", "04-02 10:11", "04-02 10:58", "04-02 10:58", "04-02 10:58", "04-03 09:10", "04-03 11:26", "04-03 09:10"],axisLabel:{fontSize:9,color:'#888'},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
+yAxis:{type:'value',min:7165.0,max:7625.0,axisLabel:{fontSize:9,color:'#888'},splitLine:{lineStyle:{color:'#f0f0f0'}},name:'元/吨',nameTextStyle:{fontSize:9,color:'#ccc'}},
+series:[{name:'报价',type:'line',data:[7235.0, 7235.0, 7235.0, 7265.0, 7305.0, 7375.0, 7345.0, 7215.0, 7245.0, 7265.0, 7305.0, 7305.0, 7305.0, 7575.0, 7475.0, 7575.0],smooth:true,symbol:'circle',symbolSize:4,lineStyle:{width:2,color:'#3498db'},itemStyle:{color:'#3498db'},areaStyle:{color:'rgba(52,152,219,0.07)'}}]});
+var chart_中石化_0柴油=echarts.init(document.getElementById('chart_中石化_0柴油'));
+chart_中石化_0柴油.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
+grid:{left:'3%',right:'4%',top:'8%',bottom:'3%',containLabel:true},
+xAxis:{type:'category',data:["03-30 08:58", "03-31 08:42", "04-01 09:23", "04-02 09:30", "04-02 11:27", "04-02 11:27", "04-02 11:27", "04-03 08:58", "04-03 09:08", "04-03 12:00", "04-03 08:58", "04-03 09:08"],axisLabel:{fontSize:9,color:'#888'},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
+yAxis:{type:'value',min:8800.0,max:9150.0,axisLabel:{fontSize:9,color:'#888'},splitLine:{lineStyle:{color:'#f0f0f0'}},name:'元/吨',nameTextStyle:{fontSize:9,color:'#ccc'}},
+series:[{name:'报价',type:'line',data:[9100.0, 9100.0, 9100.0, 9100.0, 9000.0, 9000.0, 9000.0, 9000.0, 8850.0, 9000.0, 9000.0, 8850.0],smooth:true,symbol:'circle',symbolSize:4,lineStyle:{width:2,color:'#3498db'},itemStyle:{color:'#3498db'},areaStyle:{color:'rgba(52,152,219,0.07)'}}]});
+var chart_金诚_95汽油=echarts.init(document.getElementById('chart_金诚_95汽油'));
+chart_金诚_95汽油.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
+grid:{left:'3%',right:'4%',top:'8%',bottom:'3%',containLabel:true},
+xAxis:{type:'category',data:["03-29 08:43", "03-29 09:18", "03-30 08:53", "03-30 09:09", "03-30 09:31", "03-30 09:48", "03-31 10:34", "04-01 10:22", "04-01 09:18", "04-01 09:31", "04-01 09:50", "04-01 09:59", "04-02 09:30", "04-02 10:52", "04-02 10:52", "04-02 10:52", "04-03 08:57", "04-03 09:13", "04-03 09:27", "04-03 08:57"],axisLabel:{fontSize:9,color:'#888'},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
+yAxis:{type:'value',min:7450.0,max:7770.0,axisLabel:{fontSize:9,color:'#888'},splitLine:{lineStyle:{color:'#f0f0f0'}},name:'元/吨',nameTextStyle:{fontSize:9,color:'#ccc'}},
+series:[{name:'报价',type:'line',data:[7715.0, 7715.0, 7615.0, 7610.0, 7600.0, 7585.0, 7605.0, 7550.0, 7615.0, 7610.0, 7605.0, 7605.0, 7500.0, 7500.0, 7500.0, 7500.0, 7690.0, 7720.0, 7720.0, 7690.0],smooth:true,symbol:'circle',symbolSize:4,lineStyle:{width:2,color:'#3498db'},itemStyle:{color:'#3498db'},areaStyle:{color:'rgba(52,152,219,0.07)'}}]});
+window.addEventListener("resize",function(){chart_垦利_0柴油,chart_中石化_0柴油,chart_金诚_95汽油.forEach(function(c){c.resize()})});</script></body></html>
