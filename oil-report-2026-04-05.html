@@ -47,6 +47,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 .geo-meaning{color:#555;line-height:1.5}
 .geo-source{font-size:10px;color:#aaa;margin-top:2px}
 .why{font-size:11px;color:#888;margin-top:3px;line-height:1.4}
+.backtest-section{background:#fff;border-radius:12px;padding:14px;margin-bottom:14px;border:1.5px solid #3498db30}
+.backtest-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.backtest-title{font-size:14px;font-weight:600;color:#1a1a2e}
+.backtest-badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:5px;background:#f39c1218;color:#f39c12}
+.backtest-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.backtest-metric{background:#f8f9fa;border-radius:8px;padding:10px 12px;text-align:center}
+.backtest-metric .val{font-size:22px;font-weight:700;color:#2c3e50}
+.backtest-metric .lbl{font-size:10px;color:#888;margin-top:2px}
+.confidence-bar{height:6px;border-radius:3px;background:#f0f0f0;margin-top:8px;overflow:hidden}
+.confidence-fill{height:100%;border-radius:3px;transition:width 0.3s}
+.confidence-label{display:flex;justify-content:space-between;font-size:10px;color:#999;margin-top:3px}
+.factor-row{display:flex;align-items:center;gap:6px;font-size:11px;color:#666;padding:2px 0}
+.factor-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -89,7 +102,32 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <span>可信度：90</span>
 </div>
 <div class="geo-meaning"><strong>持续影响：</strong>柴油采购不宜拖太久，先保留安全库存。</div>
-</div></div><div class="card">
+</div></div>
+<div class="backtest-section">
+<div class="backtest-header">
+<div class="backtest-title">📈 决策引擎回测（近30天，3笔）</div>
+<div class="backtest-badge">校准中</div>
+</div>
+<div class="backtest-grid">
+<div class="backtest-metric">
+<div class="val" style="color:#c0392b">33%</div>
+<div class="lbl">方向准确率</div>
+</div>
+<div class="backtest-metric">
+<div class="val" style="color:#c0392b">33%</div>
+<div class="lbl">建议命中率</div>
+</div>
+<div class="backtest-metric">
+<div class="val" style="color:#27ae60">-50</div>
+<div class="lbl">均价偏差（元/吨）</div>
+</div>
+<div class="backtest-metric">
+<div class="val">3</div>
+<div class="lbl">回测样本数</div>
+</div>
+</div>
+</div>
+<div class="card">
 <div class="card-header">
 <div class="card-title">垦利 0#柴油</div>
 <div class="price">7225<small>元/吨</small></div>
@@ -102,6 +140,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <div class="info-row"><span class="info-label">近5天区间</span><span>7205 ~ 7575（均值 7341）</span></div>
 <div class="info-row"><span class="info-label">近5天位置</span><span>░░░░░░░░░░ 5% 分位</span></div>
 <div class="info-row"><span class="info-label">全量历史</span><span>███░░░░░░░ 31% 分位（37条）</span></div>
+<div class="factor-row"><span class="factor-dot" style="background:#27ae60"></span>价格近5天低位</div><div class="factor-row"><span class="factor-dot" style="background:#3498db"></span>短线走弱</div><div class="factor-row"><span class="factor-dot" style="background:#c0392b"></span>地缘风险极高</div>
+<div class="confidence-bar"><div class="confidence-fill" style="width:95%;background:#27ae60"></div></div>
+<div class="confidence-label"><span>决策置信度：高</span><span>95%</span></div>
 <div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
 <div class="action-icon">🚨</div>
 <div>
@@ -123,6 +164,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <div class="info-row"><span class="info-label">近5天区间</span><span>8850 ~ 9100（均值 8990）</span></div>
 <div class="info-row"><span class="info-label">近5天位置</span><span>██████░░░░ 60% 分位</span></div>
 <div class="info-row"><span class="info-label">全量历史</span><span>████████░░ 85% 分位（31条）</span></div>
+<div class="factor-row"><span class="factor-dot" style="background:#c0392b"></span>地缘风险极高</div>
+<div class="confidence-bar"><div class="confidence-fill" style="width:75%;background:#27ae60"></div></div>
+<div class="confidence-label"><span>决策置信度：高</span><span>75%</span></div>
 <div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
 <div class="action-icon">🚨</div>
 <div>
@@ -144,6 +188,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <div class="info-row"><span class="info-label">近5天区间</span><span>7500 ~ 7720（均值 7595）</span></div>
 <div class="info-row"><span class="info-label">近5天位置</span><span>░░░░░░░░░░ 2% 分位</span></div>
 <div class="info-row"><span class="info-label">全量历史</span><span>█████░░░░░ 59% 分位（60条）</span></div>
+<div class="factor-row"><span class="factor-dot" style="background:#27ae60"></span>价格近5天低位</div><div class="factor-row"><span class="factor-dot" style="background:#3498db"></span>短线走弱</div><div class="factor-row"><span class="factor-dot" style="background:#c0392b"></span>地缘风险极高</div>
+<div class="confidence-bar"><div class="confidence-fill" style="width:95%;background:#27ae60"></div></div>
+<div class="confidence-label"><span>决策置信度：高</span><span>95%</span></div>
 <div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
 <div class="action-icon">🚨</div>
 <div>
