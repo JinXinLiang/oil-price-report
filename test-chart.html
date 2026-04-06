@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>测试图表</title>
+<script src="js/echarts.min.js"></script>
+<style>body{padding:16px;background:#f5f6fa;font-family:sans-serif}
+.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.chart{width:100%;height:200px}</style>
+</head><body>
+<div class="card">
+<h3>垦利 0#柴油 测试</h3>
+<p>这是一个测试图表</p>
+<div id="test" class="chart"></div>
+</div>
+<script>
+var chart = echarts.init(document.getElementById('test'));
+chart.setOption({
+  tooltip: {trigger: 'axis'},
+  grid: {left:'3%',right:'4%',top:'8%',bottom:'15%',containLabel:true},
+  xAxis: {type:'category',data:['04-01','04-02','04-03','04-04','04-05']},
+  yAxis: {type:'value'},
+  dataZoom: [{type:'slider',start:0,end:100}],
+  series: [{name:'报价',type:'line',data:[7300,7200,7400,7350,7325],smooth:true}]
+});
+</script></body></html>
