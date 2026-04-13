@@ -158,15 +158,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 </div>
 <div class="info-row"><span class="info-label">当前取价时间</span><span>最新</span></div>
 <div style="margin-bottom:8px">
-<span class="badge b-neutral">→ 震荡</span>
-<span class="badge b-flash">🔥 今日有促销</span>
+<span class="badge b-down">↓ 走弱</span>
+
 </div>
-<div class="info-row"><span class="info-label">近5天区间</span><span>8150 ~ 8600（均值 8436）</span></div>
+<div class="info-row"><span class="info-label">近5天区间</span><span>8150 ~ 8600（均值 8408）</span></div>
 <div class="info-row"><span class="info-label">近5天位置</span><span>░░░░░░░░░░ 0% 分位</span></div>
-<div class="info-row"><span class="info-label">全量历史</span><span>███░░░░░░░ 37% 分位（39条）</span></div>
-<div class="factor-row"><span class="factor-dot" style="background:#27ae60"></span>价格近5天低位</div><div class="factor-row"><span class="factor-dot" style="background:#c0392b"></span>地缘风险极高</div><div class="factor-row"><span class="factor-dot" style="background:#f39c12"></span>今日有促销</div>
-<div class="confidence-bar"><div class="confidence-fill" style="width:90%;background:#27ae60"></div></div>
-<div class="confidence-label"><span>决策置信度：高</span><span>90%</span></div>
+<div class="info-row"><span class="info-label">全量历史</span><span>███░░░░░░░ 37% 分位（38条）</span></div>
+<div class="factor-row"><span class="factor-dot" style="background:#27ae60"></span>价格近5天低位</div><div class="factor-row"><span class="factor-dot" style="background:#3498db"></span>短线走弱</div><div class="factor-row"><span class="factor-dot" style="background:#c0392b"></span>地缘风险极高</div>
+<div class="confidence-bar"><div class="confidence-fill" style="width:95%;background:#27ae60"></div></div>
+<div class="confidence-label"><span>决策置信度：高</span><span>95%</span></div>
 <div class="action-box" style="background:#c0392b18;border:1.5px solid #c0392b">
 <div class="action-icon">🚨</div>
 <div>
@@ -203,7 +203,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <div class="card-header"><div class="card-title">垦利 0#柴油 全量历史</div><div style="font-size:12px;color:#888">共 51 条记录</div></div>
 <div class="chart" id="f0" style="height:220px"></div>
 </div><div class="card">
-<div class="card-header"><div class="card-title">中石化 0#柴油 全量历史</div><div style="font-size:12px;color:#888">共 39 条记录</div></div>
+<div class="card-header"><div class="card-title">中石化 0#柴油 全量历史</div><div style="font-size:12px;color:#888">共 38 条记录</div></div>
 <div class="chart" id="f1" style="height:220px"></div>
 </div><div class="card">
 <div class="card-header"><div class="card-title">金诚 95#汽油 全量历史</div><div style="font-size:12px;color:#888">共 71 条记录</div></div>
@@ -223,9 +223,9 @@ series:[{name:'报价',type:'line',data:[7295.0, 7125.0, 7095.0, 7055.0, 7085.0,
 var c1=echarts.init(document.getElementById('c1'));
 c1.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
 grid:{left:'3%',right:'4%',top:'8%',bottom:'3%',containLabel:true},
-xAxis:{type:'category',data:["04-08 15:52", "04-09 11:20", "04-10 16:29", "04-11 08:59", "04-12 09:27", "04-13", "04-13"],axisLabel:{fontSize:9,color:'#888'},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
+xAxis:{type:'category',data:["04-08 15:52", "04-09 11:20", "04-10 16:29", "04-11 08:59", "04-12 09:27", "04-13"],axisLabel:{fontSize:9,color:'#888'},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
 yAxis:{type:'value',min:8100.0,max:8650.0,axisLabel:{fontSize:9,color:'#888'},splitLine:{lineStyle:{color:'#f0f0f0'}},name:'元/吨',nameTextStyle:{fontSize:9,color:'#ccc'}},
-series:[{name:'报价',type:'line',data:[8500.0, 8500.0, 8400.0, 8300.0, 8600.0, 8150.0, 8600.0],smooth:true,symbol:'circle',symbolSize:4,lineStyle:{width:2,color:'#3498db'},itemStyle:{color:'#3498db'},areaStyle:{color:'rgba(52,152,219,0.07)'}}]});
+series:[{name:'报价',type:'line',data:[8500.0, 8500.0, 8400.0, 8300.0, 8600.0, 8150.0],smooth:true,symbol:'circle',symbolSize:4,lineStyle:{width:2,color:'#3498db'},itemStyle:{color:'#3498db'},areaStyle:{color:'rgba(52,152,219,0.07)'}}]});
 var c2=echarts.init(document.getElementById('c2'));
 c2.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
 grid:{left:'3%',right:'4%',top:'8%',bottom:'3%',containLabel:true},
@@ -242,10 +242,10 @@ series:[{name:'报价',type:'line',data:[7535.0, 7535.0, 7435.0, 7215.0, 7535.0,
 var f1=echarts.init(document.getElementById('f1'));
 f1.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
 grid:{left:'3%',right:'4%',top:'8%',bottom:'18%',containLabel:true},
-xAxis:{type:'category',data:["2026-03-14 09:54", "2026-03-16 12:30", "2026-03-17 08:36", "2026-03-17 10:20", "2026-03-17 14:55", "2026-03-17 16:33", "2026-03-18 09:30", "2026-03-18 10:58", "2026-03-19 09:10", "2026-03-20 08:52", "2026-03-24 08:43", "2026-03-25 11:06", "2026-03-26 08:56", "2026-03-26 10:34", "2026-03-27 08:45", "2026-03-30 08:58", "2026-03-31 08:42", "2026-04-01 09:23", "2026-04-02 09:30", "2026-04-02 11:27", "2026-04-02 11:27", "2026-04-02 11:27", "2026-04-03 08:58", "2026-04-03 09:08", "2026-04-03 12:00", "2026-04-03 08:58", "2026-04-03 09:08", "2026-04-04 09:54", "2026-04-04 09:54", "2026-04-04 14:00", "2026-04-05 09:43", "2026-04-07 09:33", "2026-04-08 15:52", "2026-04-09 11:20", "2026-04-10 16:29", "2026-04-11 08:59", "2026-04-12 09:27", "2026-04-13", "2026-04-13"],axisLabel:{fontSize:9,color:'#888',rotate:30},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
+xAxis:{type:'category',data:["2026-03-14 09:54", "2026-03-16 12:30", "2026-03-17 08:36", "2026-03-17 10:20", "2026-03-17 14:55", "2026-03-17 16:33", "2026-03-18 09:30", "2026-03-18 10:58", "2026-03-19 09:10", "2026-03-20 08:52", "2026-03-24 08:43", "2026-03-25 11:06", "2026-03-26 08:56", "2026-03-26 10:34", "2026-03-27 08:45", "2026-03-30 08:58", "2026-03-31 08:42", "2026-04-01 09:23", "2026-04-02 09:30", "2026-04-02 11:27", "2026-04-02 11:27", "2026-04-02 11:27", "2026-04-03 08:58", "2026-04-03 09:08", "2026-04-03 12:00", "2026-04-03 08:58", "2026-04-03 09:08", "2026-04-04 09:54", "2026-04-04 09:54", "2026-04-04 14:00", "2026-04-05 09:43", "2026-04-07 09:33", "2026-04-08 15:52", "2026-04-09 11:20", "2026-04-10 16:29", "2026-04-11 08:59", "2026-04-12 09:27", "2026-04-13"],axisLabel:{fontSize:9,color:'#888',rotate:30},axisLine:{lineStyle:{color:'#eee'}},splitLine:{show:false}},
 yAxis:{type:'value',min:7450.0,max:9315.0,axisLabel:{fontSize:9,color:'#888'},splitLine:{lineStyle:{color:'#f0f0f0'}},name:'元/吨',nameTextStyle:{fontSize:9,color:'#ccc'}},
 dataZoom:[{type:'slider',start:0,end:100,height:20,bottom:3,handleSize:'80%',moveHandleSize:5}],
-series:[{name:'报价',type:'line',data:[7700.0, 7500.0, 7500.0, 8100.0, 8100.0, 8100.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9000.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9000.0, 9000.0, 9000.0, 9000.0, 8850.0, 9000.0, 9000.0, 8850.0, 8850.0, 9000.0, 9000.0, 9000.0, 8850.0, 8500.0, 8500.0, 8400.0, 8300.0, 8600.0, 8150.0, 8600.0],smooth:true,symbol:'circle',symbolSize:3,lineStyle:{width:1.5,color:'#2980b9'},itemStyle:{color:'#2980b9'},areaStyle:{color:'rgba(41,128,185,0.06)'}}]});
+series:[{name:'报价',type:'line',data:[7700.0, 7500.0, 7500.0, 8100.0, 8100.0, 8100.0, 8100.0, 8150.0, 8150.0, 8150.0, 9265.0, 9100.0, 9000.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9100.0, 9000.0, 9000.0, 9000.0, 9000.0, 8850.0, 9000.0, 9000.0, 8850.0, 8850.0, 9000.0, 9000.0, 9000.0, 8850.0, 8500.0, 8500.0, 8400.0, 8300.0, 8600.0, 8150.0],smooth:true,symbol:'circle',symbolSize:3,lineStyle:{width:1.5,color:'#2980b9'},itemStyle:{color:'#2980b9'},areaStyle:{color:'rgba(41,128,185,0.06)'}}]});
 var f2=echarts.init(document.getElementById('f2'));
 f2.setOption({tooltip:{trigger:'axis',formatter:'{b}<br/>￥{c}'},
 grid:{left:'3%',right:'4%',top:'8%',bottom:'18%',containLabel:true},
